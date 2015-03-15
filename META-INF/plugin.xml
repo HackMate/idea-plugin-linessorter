@@ -33,10 +33,16 @@
     <group id="linessorter.sort.group">
       <separator/>
       <action id="linessorter.sort"
-              class="org.sylfra.idea.plugins.linessorter.SortAction"
+              class="org.sylfra.idea.plugins.linessorter.SortLexicographicallyAction"
               text="Sort Lines"
               description="Sort selected lines or whole file if selection is empty">
         <keyboard-shortcut keymap="$default" first-keystroke="alt shift l"/>
+      </action>
+      <action id="linessorter.sortByLength"
+              class="org.sylfra.idea.plugins.linessorter.SortByLengthAction"
+              text="Sort Lines by Length"
+              description="Sort selected lines or whole file if selection is empty">
+          <keyboard-shortcut keymap="$default" first-keystroke="alt shift p"/>
       </action>
       <add-to-group group-id="EditMenu" anchor="last"/>
     </group>
