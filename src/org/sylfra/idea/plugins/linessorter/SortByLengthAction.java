@@ -15,9 +15,9 @@ public class SortByLengthAction extends TextComponentEditorAction {
 
     private static class SortAlphabetically implements SortHandler.Sorter {
 
-        private static final Comparator<String> COMPARATOR_BY_SIZE = new ComparatorByAscendingSize();
+        private static final Comparator<String> COMPARATOR_BY_SIZE = new ComparatorByDescendingSize();
 
-        private static class ComparatorByAscendingSize implements Comparator<String>
+        private static class ComparatorByDescendingSize implements Comparator<String>
         {
             public int compare(String s1, String s2)
             {
